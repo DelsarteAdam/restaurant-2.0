@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script type="module" src="backoffice.js"></script>
+    <header></header>
+    <div class="main">
+      <section class="btnSelection">
+        <button onclick="ongletChange(0)" id="btnActif">message</button>
+        <button onclick="ongletChange(1)">guest book</button>
+        <button onclick="ongletChange(2)">gallery</button>
+      </section>
+      <section class="mainData">
+        <div class="inData" style="display: block">01</div>
+        <div class="inData" style="display: none">02</div>
+        <div class="inData" style="display: none">03</div>
+      </section>
+    </div>
+    <script src="./backoffice.js"></script>
   </body>
 </html>

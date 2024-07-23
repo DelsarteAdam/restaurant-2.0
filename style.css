@@ -1,1 +1,49 @@
-@import url(reset.css);/*# sourceMappingURL=style.css.map */
+@import url(reset.css);
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 5vh;
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  margin: auto;
+}
+
+#btnActif {
+  border-radius: 0px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(95, 95, 95);
+  color: white;
+  width: 10vw;
+  height: 5vh;
+}
+
+.btnSelection {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2vh;
+}
+.btnSelection button {
+  border-radius: 0px;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: gainsboro;
+  width: 10vw;
+  height: 5vh;
+}
+
+.mainData {
+  height: 80vh;
+  width: 80vw;
+  overflow: auto;
+  border: 1px solid gray;
+}/*# sourceMappingURL=style.css.map */
