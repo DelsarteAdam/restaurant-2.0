@@ -2,7 +2,7 @@ doctype html
 head
   meta(charset='utf-8')
   meta(name='viewport' content='width=device-width, initial-scale=1')
-  title welcome
+  title menu
   link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH' crossorigin='anonymous')
 nav.navbar.navbar-expand-lg.bg-body-tertiary
   .container-fluid.ms-5.me-5
@@ -22,35 +22,28 @@ nav.navbar.navbar-expand-lg.bg-body-tertiary
           a.dropdown-item(href='/restaurant') Restaurant
         li
           a.dropdown-item(href='/contact') Contact
-// jumbotron
-.container-fluid.text-center.pb-5(style='\
-background-image: url(Images/Background01.jpg);\
-background-repeat: no-repeat;\
-background-size: cover;\
-')
-  img(src='/Images/logo food art copie.png' width='30%' alt='logo')
-  h1.display-4.fw-bold(style='color: white') Food-Art
-  p.lead(style='color: white') Who say Food and art cannot mix
-// 2 pannels
-.row.align-items-md-stretch.mt-5
-  .col-md-6
-    .p-5.text-white.bg-dark(style='\
-    background-image: url(/Images/Pictures/05.png);\
-    background-repeat: no-repeat;\
-    background-size: cover;\
-    ' alt='food art')
-      h2 Green supreme
-      p Freshness from the face
-      button.btn.btn-outline-dark(type='button')
-        a.text-decoration-none.text-white(href='menu.html') here
-  .col-md-6
-    .p-5.text-white.bg-dark(alt='food art' style='\
-    background-image: url(/Images/Pictures/10.png);\
-    background-repeat: no-repeat;\
-    background-size: cover;\
-    ')
-      h2 Old classic
-      p Like a old wine , an old painting !
-      button.btn.btn-outline-dark(type='button')
-        a.text-decoration-none.text-white(href='menu.html') here
+// menu
+.container.mt-5
+  .row.ms-5
+    .col-12.text-center
+      h1 EXQUISITE MENU
+    .col-12.text-center
+      h3 For all taste
+  .container.d-flex.justify-content-center
+    img(src='/Images/Pictures/04.png' alt='food art' width='20%')
+  .row
+    .col-12.mt-5
+      ul.list-group
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | Enchanted Forest Feast
+          span.badge.bg-dark.text-white.rounded-pill 14 $
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | Mystical Meadow Meal
+          span.badge.bg-dark.text-white.rounded-pill 16 $
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | Enchanted Forest Feast
+          span.badge.bg-dark.text-white.rounded-pill 16 $
+        li.list-group-item.d-flex.justify-content-between.align-items-center
+          | Whimsical Woodland Delight
+          span.badge.bg-dark.text-white.rounded-pill 24 $
 script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz' crossorigin='anonymous')

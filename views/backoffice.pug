@@ -1,0 +1,17 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title backoffice
+  link(rel='stylesheet' href='/styles/style.css')
+header
+.main
+  section.btnSelection
+    button#btnActif(onclick='ongletChange(0)') message
+    button(onclick='ongletChange(1)') guest book
+    button(onclick='ongletChange(2)') gallery
+  section.mainData
+    .inData(style='display: block') 01
+    .inData(style='display: none') 02
+    .inData(style='display: none') 03
+script(src='/javascripts/backoffice.js')
