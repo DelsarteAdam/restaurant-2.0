@@ -6,12 +6,34 @@ const Sequelize = require("sequelize");
 const sequelize = new Sequelize({
   dialect: "sqlite",
   storage: "restaurant.db",
+  //logging: false // disable logging
 });
+
+// Movie model
+class Contacts extends Sequelize.Model {}
+Contacts.init(
+  {
+    id: {
+      type: Sequelize.INTEGER,
+      primaryKey: true,
+      autoIncrement: true,
+    },
+    Date: { type: Sequelize.DATE },
+    Name: { type: Sequelize.STRING },
+    Email: { type: Sequelize.STRING },
+    Message: { type: Sequelize.STRING },
+  },
+  { sequelize }
+); // same as { sequelize: sequelize }
+
+// DATE data type accepts a date value provided in yyyy-mm-dd hh:mm:ss format,
+// while DATEONLY accepts a date value in yyyy-mm-dd format (DATE without time)
 
 // async IIFE
 (async () => {
   try {
     await sequelize.authenticate();
+    await sequelize.sync();
     console.log("Connection to the database successful!");
   } catch (error) {
     console.error("Error connecting to the database: ", error);
